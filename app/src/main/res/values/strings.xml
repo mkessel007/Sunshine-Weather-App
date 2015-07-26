@@ -2,9 +2,11 @@
     <string name="app_name">Sunshine</string>
 
     <string name="action_settings">Settings</string>
-    <!-- Label for the location preference [CHAR LIMIT=30] -->
+    <string name="action_map">Map Location</string>
 
-    
+    <!-- Menu label to fetch updated weather info from the server -->
+
+    <!-- Label for the location preference [CHAR LIMIT=30] -->
     <string name="pref_location_label">Location</string>
     <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
     <string name="pref_location_key" translatable="false">location</string>
