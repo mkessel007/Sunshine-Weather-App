@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 import android.text.format.Time;
 
+
 /**
  * Defines table and column names for the weather database.
  */
@@ -16,7 +17,7 @@ public class WeatherContract {
     // relationship between a domain name and its website.  A convenient string to use for the
     // content authority is the package name for the app, which is guaranteed to be unique on the
     // device.
-    public static final String CONTENT_AUTHORITY = "com.example.android.sunshine.app";
+    public static final String CONTENT_AUTHORITY = "com.mjkessel.android.sunshine.app";
 
     // Use CONTENT_AUTHORITY to create the base of all URI's which apps will use to contact
     // the content provider.
@@ -93,7 +94,7 @@ public class WeatherContract {
         public static final String COLUMN_WEATHER_ID = "weather_id";
 
         // Short description and long description of the weather, as provided by API.
-// e.g "clear" vs "sky is clear".
+        // e.g "clear" vs "sky is clear".
         public static final String COLUMN_SHORT_DESC = "short_desc";
 
         // Min and max temperatures for the day (stored as floats)
@@ -117,10 +118,10 @@ public class WeatherContract {
         }
 
         /*
-            Student: Fill in this buildWeatherLocation function
+            Student: This is the buildWeatherLocation function you filled in.
          */
         public static Uri buildWeatherLocation(String locationSetting) {
-            return null;
+            return CONTENT_URI.buildUpon().appendPath(locationSetting).build();
         }
 
         public static Uri buildWeatherLocationWithStartDate(
