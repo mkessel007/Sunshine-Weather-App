@@ -28,7 +28,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mjkessel.android.sunshine.MainActivity" />
         </activity>
-
     </application>
 
 </manifest>
