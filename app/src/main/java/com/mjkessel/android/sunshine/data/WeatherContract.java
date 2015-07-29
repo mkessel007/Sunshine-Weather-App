@@ -7,7 +7,6 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 import android.text.format.Time;
 
-
 /**
  * Defines table and column names for the weather database.
  */
@@ -17,7 +16,7 @@ public class WeatherContract {
     // relationship between a domain name and its website.  A convenient string to use for the
     // content authority is the package name for the app, which is guaranteed to be unique on the
     // device.
-    public static final String CONTENT_AUTHORITY = "com.mjkessel.android.sunshine.app";
+    public static final String CONTENT_AUTHORITY = "com.mjkessel.android.sunshine";
 
     // Use CONTENT_AUTHORITY to create the base of all URI's which apps will use to contact
     // the content provider.
