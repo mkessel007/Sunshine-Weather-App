@@ -1,5 +1,7 @@
 package com.mjkessel.android.sunshine;
 
+
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -19,11 +21,24 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+
 import com.mjkessel.android.sunshine.data.WeatherContract;
 import com.mjkessel.android.sunshine.data.WeatherContract.WeatherEntry;
 
+
+
+
+
+
 /**
  * A placeholder fragment containing a simple view.
+ *
+ *
+ *
+ *
+ *
+ *
  */
 public class DetailFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -189,12 +204,12 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
             boolean isMetric = Utility.isMetric(getActivity());
 
             double high = data.getDouble(COL_WEATHER_MAX_TEMP);
-            String highString = Utility.formatTemperature(getActivity(), high, isMetric);
+            String highString = Utility.formatTemperature(getActivity(), high);
             mHighTempView.setText(highString);
 
             // Read low temperature from cursor and update view
             double low = data.getDouble(COL_WEATHER_MIN_TEMP);
-            String lowString = Utility.formatTemperature(getActivity(), low, isMetric);
+            String lowString = Utility.formatTemperature(getActivity(), low);
             mLowTempView.setText(lowString);
 
             // Read humidity from cursor and update view
